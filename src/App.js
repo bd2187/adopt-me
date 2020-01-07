@@ -1,5 +1,4 @@
-const Pet = function(props) {
-    const { name, animal, breed } = props;
+const Pet = function({ name, animal, breed }) {
     return React.createElement("div", {}, [
         React.createElement("h1", {}, name),
         React.createElement("h2", {}, animal),
