@@ -1,15 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
-import Pet from "./Pet";
+import SearchParams from "./SearchParams";
 
 const App = function() {
     return (
-        <div>
-            <h1>Adopt me!</h1>
-            <Pet name="Dorito" animal="Cat" breed="Manx" />
-            <Pet name="Daisy" animal="Dog" breed="Pug" />
-            <Pet name="Charlie" animal="Dog" breed="Pug" />
-        </div>
+        <React.StrictMode>
+            <div>
+                <h1>Adopt me!</h1>
+                <SearchParams />
+            </div>
+        </React.StrictMode>
     );
 };
 
